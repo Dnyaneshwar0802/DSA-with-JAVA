@@ -1,3 +1,8 @@
 *.xml
 *.class
 *.xml
+*.xml
+.idea/vcs.xml
+*.xml
+*.xml
+.idea/vcs.xml
