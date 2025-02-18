@@ -11,7 +11,12 @@ public class LargestofThreeNumbersTernary {
         int num2 = sc.nextInt();
         System.out.println("Enter Third Number");
         int num3 = sc.nextInt();
-        String str=(num1>num2 && num1>num3)?"Number1 is Largest":(num2>num1 &&num2>num3)?"Num2 is Largest ":"Num3 largest";
-        System.out.println(str);
+        if (num1 == num2 && num2 == num3)
+            System.out.println("All numbers Are equal");
+        else {
+            String str = (num1 >= num2 && num1 >= num3) ? "Number1 is Largest" : (num2 >= num1 && num2 >= num3) ? "Num2 is Largest " : "Num3 largest";
+
+            System.out.println(str);
+        }
     }
 }
