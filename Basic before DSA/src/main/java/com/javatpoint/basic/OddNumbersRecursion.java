@@ -12,6 +12,12 @@ public class OddNumbersRecursion {
             num-=1;
         }
         DiplayOdd(1,num);
+        System.out.println();
+        System.out.println("Printing Odd using loop");
+        for(int i=1;i<=num;i=i+2)
+        {
+            System.out.print(i+",");
+        }
     }
 
     private static void DiplayOdd(int i, int num) {
