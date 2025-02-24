@@ -1,7 +1,7 @@
 package com.javatpoint.basic;
 
 import java.util.Scanner;
-
+//4.Armstrong Number in Java
 /*153: 13 + 53 + 33 = 1 + 125+ 27 = 153
   125: 13 + 23 + 53 = 1 + 8 + 125 = 134 (Not an Armstrong Number)*/
 public class ArmStrongNumber {
