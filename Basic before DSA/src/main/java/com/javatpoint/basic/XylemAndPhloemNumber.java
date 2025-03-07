@@ -33,6 +33,26 @@ public class XylemAndPhloemNumber {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         int count = countDigit(num);
+        int sumofExtreme = 0;
+        int sumofMean = 0;
+        System.out.println(count);
+        for (int i = 1; i <= count; i++) {
+
+            if (i == 1 || i == count) {
+                //     System.out.println("Extreme");
+                sumofExtreme = sumofExtreme + (num % 10);
+
+            } else {
+//System.out.println("Inside Else");
+                sumofMean = sumofMean + (num % 10);
+            }
+            num = (num - (num % 10)) / 10;
+            System.out.println(num);
+        }
+        System.out.println(sumofMean + ">>" + sumofExtreme + ">>");
+        if (sumofExtreme == sumofMean) {
+            System.out.println("Number is Xylem Number");
+        } else System.out.println("Number is  phloem number");
 
     }
 }
