@@ -19,13 +19,20 @@ The sum of extreme digits: 10
 The sum of mean digits: 10
 825122 is a xylem number.*/
 public class XylemAndPhloemNumber {
-
+    static int countDigit(int num) {
+        int count = 0;
+        while (num > 0) {
+            num = (num - (num % 10)) / 10;
+            count++;
+        }
+        return count;
+    }
 
     public static void main(String[] args) {
         System.out.println("Enter Number To check Xylem or Pheloem");
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-       // int count = countDigit(num);
-       
+        int count = countDigit(num);
+
     }
 }
