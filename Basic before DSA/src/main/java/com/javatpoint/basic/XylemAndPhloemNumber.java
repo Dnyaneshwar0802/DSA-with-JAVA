@@ -47,7 +47,7 @@ public class XylemAndPhloemNumber {
                 sumofMean = sumofMean + (num % 10);
             }
             num = (num - (num % 10)) / 10;
-            System.out.println(num);
+          //  System.out.println(num);
         }
         System.out.println(sumofMean + ">>" + sumofExtreme + ">>");
         if (sumofExtreme == sumofMean) {
